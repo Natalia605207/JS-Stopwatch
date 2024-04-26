@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81ed789937.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
+    <div class="main">
+    <div class="header">
+        <h1 data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">Stopwatch</h1>
+    </div>
+    <div class="stopwatch-container">
+        <div class="stopwatch" data-aos="flip-up" data-aos-duration="2500" data-aos-delay="900">
+            <span id="hours">00</span><span>:</span>
+            <span id="minutes">00</span><span>:</span>
+            <span id="seconds">00</span>
+        </div>
+        <div class="btn-container" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+            <button class="btn" id="btn-start">Start</button>
+            <button class="btn" id="btn-pause">Pause</button>
+            <button class="btn" id="btn-reset">Reset</button>
+            <button class="btn" id="btn-lap">Lap</button>
+        </div>
+        <div class="laps-container">
+            <ol id="laps">
+            </ol>
+            <button class="clear" id="btn-clearLaps">Clear All</button>
+        </div>
+    </div>
+</div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
